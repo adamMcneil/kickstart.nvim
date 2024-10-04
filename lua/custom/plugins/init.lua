@@ -4,10 +4,10 @@
 -- See the kickstart.nvim README for more information
 return {
   {
-    'projekt0n/github-nvim-theme',
+    'folke/tokyonight.nvim',
     priority = 1000,
     config = function()
-      vim.cmd.colorscheme 'github_dark'
+      vim.cmd.colorscheme 'tokyonight'
       vim.api.nvim_set_hl(0, 'LspSignatureActiveParameter', { fg = 'green' })
       vim.api.nvim_set_hl(0, 'VertSplit', { fg = '#212327' })
     end,
@@ -20,7 +20,7 @@ return {
     opts = {
       options = {
         icons_enabled = false,
-        theme = 'github_dark',
+        theme = 'tokyo-night',
         component_separators = '|',
         section_separators = '',
       },
