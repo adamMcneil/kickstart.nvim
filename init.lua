@@ -181,6 +181,9 @@ vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' }
 -- vim.keymap.set('n', '<up>', '<cmd>echo "Use k to move!!"<CR>')
 -- vim.keymap.set('n', '<down>', '<cmd>echo "Use j to move!!"<CR>')
 
+vim.keymap.set('n', '<C-u>', '<C-u>zz', { desc = 'Scroll up and center', noremap = true })
+vim.keymap.set('n', '<C-d>', '<C-d>zz', { desc = 'Scroll down and center', noremap = true })
+
 -- Keybinds to make split navigation easier.
 --  Use CTRL+<hjkl> to switch between windows
 --
@@ -575,7 +578,7 @@ require('lazy').setup({
         --    https://github.com/pmizio/typescript-tools.nvim
         --
         -- But for many setups, the LSP (`tsserver`) will work just fine
-        -- tsserver = {},
+        ts_ls = {},
         --
 
         lua_ls = {
