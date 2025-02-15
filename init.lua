@@ -776,10 +776,17 @@ require('lazy').setup({
     end,
   },
 
+  -- Using lazy.nvim
   {
-    'scottmckendry/cyberdream.nvim',
+    'ribru17/bamboo.nvim',
     lazy = false,
     priority = 1000,
+    config = function()
+      require('bamboo').setup {
+        -- optional configuration here
+      }
+      require('bamboo').load()
+    end,
   },
 
   -- Highlight todo, notes, etc in comments
