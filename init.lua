@@ -183,6 +183,7 @@ vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' }
 
 vim.keymap.set('n', '<C-u>', '<C-u>zz', { desc = 'Scroll up and center', noremap = true })
 vim.keymap.set('n', '<C-d>', '<C-d>zz', { desc = 'Scroll down and center', noremap = true })
+vim.keymap.set('n', '<C-c>', 'ggVGy', { desc = 'copy file', noremap = true })
 
 -- Keybinds to make split navigation easier.
 --  Use CTRL+<hjkl> to switch between windows
